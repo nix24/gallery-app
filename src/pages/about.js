@@ -8,13 +8,3 @@ export default function about() {
     </div>
   );
 }
-
-export async function getServerSideProps(ctx){
-
-
-  return {
-    props:{
-      data:null
-    }
-  }
-}
