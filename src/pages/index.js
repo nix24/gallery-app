@@ -2,7 +2,11 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import lunarMoonBg from '../../public/lunar-moon-bg.jpg';
 import Image from 'next/image';
-
+/**
+ * 
+ * TODO:
+ * 1. Decide on final styling. Refactor in future for cleaner code 
+ */
 export default function Home() {
   return (
     <>
