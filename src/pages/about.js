@@ -1,16 +1,21 @@
 import Layout from "@/components/layout";
+import Footer from "@/components/footer";
+
 /**
  * 
- * TODO:
- * 1. Import page content from old site
- * . Add self img, decide on structure 
+ * layout:
+ * self img
+ * subtitle (who am I)
+ *  Headers: 1. About Me 2. Skills 3. Projects
  */
 export default function about() {
   return (
-    <div className="prose">
+    <div className="h-screen">
       <Layout />
-      <h1>About</h1>
-      <a href='/'>Home</a>
+      <div className="prose">
+        {/* multiple bubble cards throughout the screen, each with a different topic */}
+      </div>
+      <Footer />
     </div>
   );
 }

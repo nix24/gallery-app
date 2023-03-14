@@ -1,4 +1,5 @@
 import Layout from "@/components/layout";
+import Image from "next/image";
 
 /**
  * 
@@ -9,17 +10,9 @@ export default function gallery() {
   return (
     <div className="prose">
       <Layout />
-      <h1>Gallery</h1>
+      {/* creating Gallery placeholder for layout   */}
     </div>
   );
 }
 
-export async function getServerSideProps(ctx){
 
-
-  return {
-    props:{
-      data:null
-    }
-  }
-}

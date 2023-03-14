@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
+import Footer from '@/components/footer';
 import lunarMoonBg from '../../public/lunar-moon-bg.jpg';
 import Image from 'next/image';
+import Link from 'next/link';
 /**
  * 
  * TODO:
@@ -18,25 +20,27 @@ export default function Home() {
 
       </Head>
       <Layout />
-      <div className="flex justify-center items-center text-center">
+      <div className="flex flex-col justify-center items-center text-center overflow-x-hidden">
         <div className="absolute inset-0 z-[-1] opacity-80">
-          <Image src={lunarMoonBg} alt="lunar moon background" fill 
-          style={{ objectFit: 'cover' }}
-          quality={100} />
+          <Image src={lunarMoonBg} alt="lunar moon background" fill
+            style={{ objectFit: 'cover' }}
+            quality={100} />
         </div>
         <div className="relative prose font-thin">
           <h1 className=" font-semibold text-base-content mb-4 leading-tight">
             Welcome to the <span className='text-amber-200'>Cafe</span>
           </h1>
           <p className='text-amber-200 pt-[3.8rem] lg:pt-[5rem]'>This site is to dedicate my variety of work ranging from art, to projects I have worked on in the past.</p>
-          <p className='text-amber-200 pt-[6rem] lg:pt-[8.5rem]'>Make yourself at home!</p>
+          <p className='text-amber-200 pt-[5.5rem] lg:pt-[7.5rem]'>Make yourself at home!</p>
         </div>
         {/* outline button that directs to the gallery */}
         <div className="absolute bottom-[7rem] lg:bottom-[3rem] left-0 right-0 flex justify-center mb-8">
-          <a href="/gallery" className="btn btn-outline btn-sm">
+          <Link href="/gallery" className="btn btn-outline btn-sm">
             Gallery
-          </a>
-          </div>
+          </Link>
+        </div>
+        <div className="mt-[9rem]" />
+        <Footer />
       </div>
     </>
   );
